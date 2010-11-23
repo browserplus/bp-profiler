@@ -1,6 +1,4 @@
-This project's goal is to create a BrowserPlus[1] plugin to profile Javascript.
-
-Service Description:
+This repo can be used to build the BrowserPlus profiler service.
 
 A service that analyzes the memory and cpu usage of a web browser. The service can take 1 sample or multiple samples at a specified
 interval. When sampling at intervals, at most 1,000 samples are taken. If you provide a callback function, your javascript will be called
@@ -34,8 +32,7 @@ Safari Memory : 32768000
 Right now it's a hack, no, a kludge that's brittle, ugly and smells bad.
 It's osx/ffx only.
 
-How to get the service installed see the README.txt in:
-src/service/README.txt
-
-
-[1] http://developer.yahoo.com/browserplus
+This service uses submodules browserplus/bakery, 
+and browserplus/bp-service-framework.
+ 
+Instructions to build the service are in the file BUILDING.
